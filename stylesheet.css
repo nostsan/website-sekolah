@@ -1,0 +1,115 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #08e22c;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hero {
+    color: black;
+    text-align: center;
+  }
+  .hero-slider-container {
+    text-align: center;
+    margin-bottom: 2rem; /* Bisa ubah jarak antar elemen */
+  }
+  
+  .hero-slider {
+    position: relative;
+    height: 400px; /* Ganti tinggi slider */
+    overflow: hidden;
+    border-radius: 5px; /* Ganti radius sudut */
+    margin-bottom: 1rem;
+  }
+  
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Bisa ubah ke 'contain' jika ingin seluruh gambar terlihat */
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .hero-slider button.prev,
+  .hero-slider button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.4); /* Ubah warna tombol */
+    border: none;
+    color: white;
+    font-size: 2rem; /* Ubah ukuran ikon tombol */
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 4px;
+  }
+  
+  .hero-slider button.prev { left: 10px; }  /* Ubah posisi tombol kiri */
+  .hero-slider button.next { right: 10px; } /* Ubah posisi tombol kanan */
+  
+  .hero-text {
+    background-color: rgba(0, 0, 0, 0.05); /* Ganti warna background teks */
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .hero-text h2 {
+    font-size: 28px; /* Ganti ukuran judul */
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-text p {
+    font-size: 18px; /* Ganti ukuran paragraf */
+    color: #333;     /* Ganti warna teks */
+  }  
+  /* Isi hero tetap di atas overlay */
+  .hero h2,
+  .hero p {
+    position: relative;
+    z-index: 2;
+  }
+  
+  
+  .info {
+    padding: 2rem;
+  }
+  
+  footer {
+    background-color: #08e22c;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
